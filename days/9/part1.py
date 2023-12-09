@@ -3,7 +3,7 @@ with open('inputs.txt', 'r') as f:
 
 def getNextNumber(nums):
     differences = [nums[i+1] - nums[i] for i in range(len(nums)-1)]
-    if not all([v == 0 for v in differences]):
+    if any(differences):
         return differences[-1] + getNextNumber(differences)
     else:
         return differences[-1]
