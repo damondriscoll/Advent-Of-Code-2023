@@ -1,5 +1,3 @@
-from math import lcm
-
 with open('inputs.txt', 'r') as f:
     histories = f.read().split('\n')
 
